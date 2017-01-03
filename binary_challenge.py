@@ -29,7 +29,7 @@ class Bin_function:
     def bin_string(self):
         return bin(self._value)[2:]
 
-#TODO: - Create a frame which takes a start number and the nth term
+
 def find_nth_term(start, n):
     """
     :param start: The initial value of the function (S(0) == start)
@@ -52,11 +52,12 @@ if __name__ == '__main__':
     try:
         start = int(input("Input a value for S(0)\n"))
         n = int(input("Input n\n"))
+        print(find_nth_term(abs(start), abs(n)))
     except ValueError:
         print("Your input did not consist entirely of numeric characters. "
               "Stopping program.\n")
 
-    print(find_nth_term(abs(start), abs(n)))
+
 
 
 
